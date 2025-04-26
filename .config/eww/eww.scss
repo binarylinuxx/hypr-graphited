@@ -1,0 +1,41 @@
+$bg-color: rgba(30, 30, 46, 0.85);
+$border-color: rgba(205, 214, 244, 0.2);
+$indicator-color: #cba6f7;
+
+.dock {
+  background-color: $bg-color;
+  border-radius: 16px 16px 0 0;
+  padding: 8px;
+  margin: 0 30%;
+  border: 1px solid $border-color;
+  border-bottom: none;
+}
+
+.app-icon {
+  padding: 6px;
+  border-radius: 12px;
+  margin: 0 4px;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  &.running {
+    box-shadow: 0 -2px 0 $indicator-color;
+    
+    &:hover {
+      box-shadow: 0 -3px 0 $indicator-color;
+    }
+  }
+}
+
+.app-icon-box {
+  padding: 4px;
+}
+
+.app-image {
+  min-width: 48px;
+  min-height: 48px;
+}

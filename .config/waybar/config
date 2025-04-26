@@ -1,0 +1,96 @@
+// waybar by binarylinuxx
+{
+	"height": 0,
+	"spacing": 0,
+	"modules-left": ["hyprland/workspaces", "hyprland/window"],
+    "modules-center": ["custom/weather","custom/music", "custom/alacritty", "custom/files"],
+    "modules-right": ["tray", "hyprland/language", "pulseaudio", "clock"],
+    "reload_style_on_change": true,
+
+	"hyprland/window": {
+		"format": "{class}",
+		"separate-outputs": false,
+		"rewrite": {
+			"": " Desktop",
+			"Alacritty": " Terminal",
+			"foot": " Terminal",
+			"kitty": " Terminal",
+			"firefox": " FireFox"
+		},
+	},
+
+	"tray": {
+		"icon-size": 18,
+		"spacing": 10
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"format-icons": {
+		    "1": "",
+		    "2": "",
+		    "3": "",
+		    "4": "",
+		    "5": "",
+		    "6": "",
+		    "7": "",
+		    "8": "",
+		    "9": "",
+		    "10": "",
+			"urgent": "",
+			"active": "",
+			"default": ""
+			},
+		"tooltip": false,
+		"persistent-workspaces": {
+	   "*": 10
+		},
+	},
+
+	
+		"custom/weather": {
+			"format": "{}",
+			"interval": 10,
+			"exec": "~/.config/waybar/weather.sh",
+			"tooltip": false
+		},
+
+		"custom/alacritty": {
+			"format": "",
+			"on-click": "exec alacritty --title=home",
+			"tooltip": false
+		},
+
+		"custom/files": {
+			"format": "",
+			"on-click": "nemo",
+		},
+
+		"custom/music": {
+    		"exec": "~/.config/waybar/scripts/current.sh",
+    		"interval": 0.1,
+    		"return-type": "json",
+    		"format": "{}",
+    		"tooltip": true
+		},
+
+    "pulseaudio": {
+		"scroll-step": 5,
+		"format": "{icon}{volume}%",
+		"format-icons": {
+			"default": [" ", " ", " "]
+		},
+		"on-click": "pavucontrol"
+	},
+
+
+		"clock": {
+			"format": "{:%I:%M%p}",
+		},
+
+		"hyprland/language": {
+			"format-en": "EN",
+			"format-ru": "RU",
+		},
+},

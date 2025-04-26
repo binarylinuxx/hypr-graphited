@@ -1,0 +1,4 @@
+[Bookmarks]
+[Recent]
+/home/blx/Downloads/
+/usr/share/fonts/TTF/

@@ -1,0 +1,108 @@
+@import "colors.css";
+
+* {
+	font-family: Jetbrains Mono;
+	font-weight: 900;
+	font-size: 16px;
+	min-height: 0px;
+}
+
+window#waybar {
+	background: @on_secondary_blur;
+	border-radius: 5;
+	min-height: 0;
+}
+
+#custom-weather {
+	background: @primary;
+	color: @on_primary;
+	margin: 5px;
+	padding: 0px 5px;
+	border-radius: 5px;
+}
+
+#workspaces button {
+	padding: 0 5px;
+	background-color: transparent;
+	color: @on_primary;
+}
+
+#workspaces button:hover {
+	padding: 0 5px;
+	background-color: transparent;
+	color: @on_primary;
+}
+
+#workspaces button.active {
+	padding: 0 5px;
+	background-color: transparent;
+	color: @surface;
+}
+
+#workspaces {
+	padding: 2 1;
+	margin: 5;
+	color: @on_primary;
+	background-color: @primary;
+	border: none;
+	border-radius: 5;
+}
+
+#language {
+	background: @primary;
+	color: @on_primary;
+	margin: 5px;
+	padding: 0px 5px;
+	border-radius: 5px;
+}
+
+#pulseaudio {
+	background: @primary;
+	color: @on_primary;
+	margin: 5px 0;
+	padding: 0px 5px;
+	border-radius: 5px;
+}
+
+#clock {
+	background: @primary;
+	color: @on_primary;
+	margin: 5px;
+	padding: 0px 5px;
+	border-radius: 5px;
+}
+
+#custom-files {
+	background: @primary;
+	color: @on_primary;
+	margin: 5px 5px 5px 0;
+	padding: 0px 5px 0px 0px;
+	border-radius: 0 5px 5px 0;
+}
+
+#custom-alacritty {
+	background: @primary;
+	color: @on_primary;
+	margin: 5px 0px 5px 0px;
+	padding: 0px 15px 0px 7px;
+	border-radius: 5 0px 0px 5;
+}
+
+#tray {
+	padding: 2 5;
+	margin: 5 0;
+	background-color: @primary;
+	border: none;
+	border-radius: 5;
+}
+
+#window {
+	padding: 0 7;
+	margin: 5px;
+	color: @on_primary;
+	background-color: @primary;
+	border-radius: 5;
+}
+
+
+

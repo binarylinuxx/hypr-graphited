@@ -1,0 +1,1 @@
+{AMD/AMD Radeon RX 7600 (radeonsi, navi33, LLVM 19.1.4, DRM 3.61, 6.12.23_1)/4.6 (Core Profile) Mesa 24.3.4}=SUPPORTED

@@ -1,0 +1,20 @@
+layer=overlay
+font=Jetbrains Mono 11.2
+width=190
+margin=2
+padding=0, 0, 50, 20
+border-size=3
+border-radius=10
+progress-color=#1e1e2e
+max-icon-size=36
+icon-location=left
+format=<b>%s</b>\n%b
+text-alignment=center
+anchor=top-center
+background-color=#000000
+border-color=#ffffff
+text-color=#ffffff
+default-timeout=5000
+ignore-timeout=1
+
+

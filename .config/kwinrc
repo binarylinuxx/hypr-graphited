@@ -1,0 +1,17 @@
+[Activities][LastVirtualDesktop]
+10089943-b545-4f7c-9c16-3cc0e978f245=0076f4dc-5a26-405b-91c3-ef0afe66eed3
+
+[Desktops]
+Id_1=0076f4dc-5a26-405b-91c3-ef0afe66eed3
+Id_2=94481f61-fe89-45ff-8530-ebf6a282953a
+Number=2
+Rows=1
+
+[Tiling]
+padding=4
+
+[Tiling][e8f29b13-e949-5dea-b7d6-2a872f95d584]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Xwayland]
+Scale=1

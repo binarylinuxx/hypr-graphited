@@ -1,0 +1,22 @@
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 10
+
+[font.normal]
+family = "Jetbrains Mono"
+style = "bold"
+
+[window]
+opacity = 0.1
+
+[window.padding]
+x = 15
+y = 15
+
+[selection]
+save_to_clipboard = true
+
+[general]
+import = ["colors.toml"]

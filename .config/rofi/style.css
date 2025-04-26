@@ -1,0 +1,62 @@
+@define-color bg #2e2e2e;         /* Dark graphite background */
+@define-color fg #d1d1d1;         /* Light graphite text */
+@define-color accent #3a3a3a;     /* Subtle accent color */
+@define-color highlight #4a4a4a;  /* Highlighted elements */
+@define-color border #1a1a1a;     /* Border color */
+
+* {
+    font-family: JetBrains Mono;
+    font-size: 13px;
+    color: @fg;
+    background-color: @bg;
+}
+
+window {
+    background-color: @bg;
+    border-radius: 20px;
+    color: @fg;
+}
+
+#input {
+    margin: 10px;
+    padding: 1px;
+    border-radius: 18px;
+    border: none;
+    background-color: @accent;
+    color: @fg;
+}
+
+#inner-box {
+    background-color: @bg;
+    padding: 15px 0 0 0;
+}
+
+#outer-box {
+    margin: 20px;
+    padding: 0px;
+    background-color: @bg;
+}
+
+#text {
+    padding: 8px;
+    margin: 2px;
+    color: @fg;
+}
+
+#entry {
+    background-color: @bg;
+    padding: 0 15px;
+}
+
+#entry:nth-child(even) {
+    background-color: @accent;
+}
+
+#entry:selected {
+    border-radius: 5px;
+    background-color: @highlight;
+}
+
+#text:selected {
+    color: @fg;
+}

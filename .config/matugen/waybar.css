@@ -1,0 +1,8 @@
+/*
+* Css Colors
+* Generated with Matugen
+*/
+@define-color on_secondary_blur {{colors.on_secondary.default.rgba | set_alpha: 0.1}};
+<* for name, value in colors *>
+    @define-color {{name}} {{value.dark.hex}};
+<* endfor *>

@@ -1,0 +1,91 @@
+/**
+ * Rofi Configuration - Graphite Theme
+ * Fixed: Added missing semicolon after @import
+ */
+
+/* Import color definitions */
+@import "~/.config/rofi/colors.rasi";
+
+/* Main Configuration */
+configuration {
+    modi: "drun,run,window";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";
+    font: "JetBrainsMono Bold 14";
+    display-drun: " Apps";
+    drun-display-format: "{name}";
+    sidebar-mode: false;
+}
+
+/* Window Settings */
+window {
+    width: 600px;
+    background-color: @bg;
+    border: 2px solid @border;
+    border-radius: 1em;
+    padding: 0;
+    location: center;
+}
+
+/* Main Box Layout */
+mainbox {
+    children: [inputbar, listview];
+    spacing: 0;
+    padding: 6px;
+    background-color: @bg;
+}
+
+/* Input Bar */
+inputbar {
+    background-color: @fg;
+    border: 2px solid @fg;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 0 0 6px 0;
+    
+    children: [prompt, entry];
+}
+
+prompt {
+    enabled: false;
+}
+
+entry {
+    text-color: @bg;
+    placeholder: "Search...";
+    placeholder-color: @bg;
+}
+
+/* List View */
+listview {
+    columns: 2;
+    lines: 16;
+    dynamic: true;
+    scrollbar: false;
+    background-color: @bg;
+    spacing: 4px;
+}
+
+/* Elements */
+element {
+    padding: 4px;
+    background-color: @bg;
+    text-color: @fg;
+}
+
+element selected.normal {
+    background-color: @selected-bg;
+    text-color: @selected-fg;
+    border-radius: 5px;
+}
+
+/* Status Messages */
+message {
+    background-color: @bg;
+    text-color: @fg;
+    padding: 3px;
+}
+
+textbox {
+    text-color: @fg;
+}

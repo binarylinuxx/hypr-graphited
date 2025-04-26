@@ -1,0 +1,9 @@
+/* Graphite Colors */
+* {
+bg: #2b2b2b;         /* Deep graphite */
+fg: #d1d1d1;         /* Light graphite text */
+accent: #555555;     /* Subtle hover/accent */
+selected-bg: #3a3a3a; /* Selected item background */
+selected-fg: #d1d1d1; /* Selected item text */
+border: #3a3a3a;     /* Subtle border */
+}

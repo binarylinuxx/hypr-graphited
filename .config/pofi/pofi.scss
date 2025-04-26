@@ -1,0 +1,54 @@
+window {
+  background-color: rgba(35, 38, 41, 0.95);
+  color: #e6e6e6;
+  border-radius: 8px;
+  border: 1px solid rgba(61, 174, 233, 0.5);
+  font-family: "Jetbrains Mono";
+  font-weight: 900;
+}
+
+/* Search entry */
+entry {
+  background-color: rgba(45, 48, 51, 0.9);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+/* App row */
+.app-row {
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+/* Selected app row */
+.app-row:selected {
+  background-color: rgba(61, 174, 233, 0.9);
+  color: #ffffff;
+  border-radius: 8px;
+}
+
+/* App name */
+.app-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #e6e6e6;
+}
+
+/* App name when selected */
+.app-row:selected .app-name {
+  color: #ffffff;
+}
+
+/* App description */
+.app-description {
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+/* App description when selected */
+.app-row:selected .app-description {
+  color: #ffffff;
+}
